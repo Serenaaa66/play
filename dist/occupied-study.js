@@ -10,8 +10,8 @@ export const occupiedProject={
   heroAlt:'A character peeks above the blue door of the OCCUPIED! physical installation',
   overview:'An interactive installation turning an awkward everyday moment into play',
   description:'Knocks, light switches and a stolen sheet of paper trigger a playful character’s reactions.',
-  headline:'Gamifying everyday frustration.',
-  lede:'An interactive physical installation turning a common awkward moment into a playful brand experience. A closed toilet door becomes the starting point for a small, surprising game.',
+  headline:'Experiential Interaction & Gamification',
+  lede:'Turning public frustration into a playful, engaging brand experience.',
   collection:'Experiential Design',
   credits:[
     ['EXPERIENCE','Experiential Marketing · Gamification · User Empathy'],
@@ -20,30 +20,28 @@ export const occupiedProject={
   caseStudy:{
     chapters:[
       {
-        label:'First impression',title:'OCCUPIED!',layout:'image-led',
-        intro:'A familiar closed door, an unexpected face and an invitation to interact. The installation turns an awkward interruption into a playful physical encounter.',
+        label:'The Insight',title:'OCCUPIED!',layout:'image-led',
+        intro:'Public toilet stalls often create frustration and awkwardness.',
         notes:[
-          ['Experiential marketing','Create a memorable encounter.'],
-          ['Gamification','Reward curiosity with a response.'],
-          ['User empathy','Start with a familiar human moment.']
+          ['The Strategy','Instead of solving this as a purely functional problem, we reframed it as an interactive game (Gamification). We tapped into human curiosity and playfulness.'],
+          ['The Solution','Built a physical computing installation where users interact via knocking, light-switching, and “stealing” toilet paper to trigger humorous reactions from an NPC, aiming for a “Win State”.']
         ],
         figures:[{src:media+'blue-door.png',width:842,height:666,wide:true,caption:'First encounter · A character peeks over the blue door'}]
       },
       {
-        label:'Interactive storytelling & user journey',title:'Knock. Peek. Push your luck.',
-        intro:[
-          'The journey moves from a normal state towards a win state through actions such as knocking, opening the door or “stealing” toilet paper.',
-          'Each action triggers a different combination of voice, light and movement. Timed transitions let the character react, recover and invite the next interaction.',
-          'A physical game designed to create memorable, shareable moments.'
+        label:'The Experience',title:'Interactive storytelling & user journey',
+        notes:[
+          ['User Journey','Designed a Finite State Machine (Normal, Angry, Screaming, Win) to map out the user’s interactive journey.'],
+          ['Storytelling','Created an engaging narrative where every physical action leads to an immediate, multi-sensory (sound + visual) response, keeping the user hooked.']
         ],
         figures:[{src:media+'interaction-frame-4.png',width:842,height:595,wide:true,maxWidth:842,diagram:true,caption:'User journey · Physical actions, character reactions and timed states'}]
       },
       {
-        label:'From concept to reality',title:'Make every action count.',
-        intro:'Electronics and C++ game logic bring the interaction into a working physical prototype. Sensor selection makes the actions intuitive, while servo mechanisms, light and audio give the character a clear response.',
+        label:'The Execution & Marketing Value',title:'From concept to reality',
         notes:[
-          ['Sense','A piezo disc detects knocks; switches detect the door, light control and removed paper.'],
-          ['Respond','Five servos control body movement, the door, the arms and the paper mechanism.']
+          ['What I Did','Prototyped the full physical experience, engineered the electronics (sensors/actuators), and coded the game logic in C++.'],
+          ['Why it matters for Marketing','This project demonstrates my ability to design experiential marketing campaigns, understand user motivation, and deliver a physical brand interaction that creates memorable, shareable moments.'],
+          ['Keywords','Experiential Marketing | Gamification | User Journey Mapping | Prototyping | Storytelling']
         ],
         figureGroups:[
           {label:'Electronics & control',figures:[{src:media+'electronics-frame-5.png',width:842,height:595,wide:true,maxWidth:842,diagram:true,caption:'Electronics · Sensors, five servo motors, COB LED and audio connected to Bela'}]},

@@ -16,8 +16,8 @@ export const sprayProject={
   heroAlt:'WHYYYYY SPRAY fountain concept with eight water jets and ground buttons surrounding four player statues',
   overview:'A walk-up fountain memory game designed around waiting commuters',
   description:'User research and iterative prototypes turn water, light and sound into a short, shared moment of play.',
-  headline:'A little play between trains.',
-  lede:'WHYYYYY SPRAY is a walk-up fountain memory game for commuters waiting at train stations. Ground buttons turn sequences of water, light and sound into a short, shared moment of play, shaped for tired people with bags to carry and a train to catch.',
+  headline:'Gamifying the Commuter Experience',
+  lede:'A data-driven interactive experience to reduce commuter stress.',
   collection:'Human-Centred Design',
   credits:[
     ['RESEARCH','Surveys · Journey Mapping · User Testing'],
@@ -25,9 +25,34 @@ export const sprayProject={
   ],
   caseStudy:{
     chapters:[{
-      label:'Human-centred design',
-      title:'Designed around the person waiting.',
-      intro:'Journey mapping, a vote on 15 concepts and storyboard tests at the station focused the brief on short, low-effort play with no equipment to wear. Breadboard, mid-fidelity and 1:20-scale prototypes helped refine the memory sequence, simultaneous multiplayer and audio cues. Testing shifted the interaction towards simpler shapes, clearer starts and an automatic reset, while Fusion 360 modelling, 3D printing and Raspberry Pi / Arduino electronics brought the concept into a working physical prototype.',
+      label:'The Insight',title:'Turn waiting into play.',
+      notes:[
+        ['The Problem','46% rise in psychological distress among UK adults. Daily train commuters experience peak anxiety during waiting times.'],
+        ['The Objective','Using Gamification to transform frustrating waiting time into a relaxing, playful experience.']
+      ]
+    },{
+      label:'Market Validation',title:'Selected by the people who would play.',
+      notes:[
+        ['Concept Voting','Generated 15 initial concepts. We engaged 50+ users in a public vote to select the best idea, ensuring the final design was truly user-centric.'],
+        ['Target Audience','Working professionals and students during peak hours.']
+      ]
+    },{
+      label:'Agile Iteration & A/B Testing',title:'Low-effort but rewarding.',
+      intro:'Built a low-fidelity interactive prototype and tested it with 10 users (Group A vs. Group B) to measure engagement and relaxation levels.',
+      notes:[
+        ['Feedback','“The sequence was too long, it felt like luck.”'],
+        ['Iteration','Added visual clues and shortened the sequence, making the experience “low-effort but rewarding.”'],
+        ['Feedback','“Hard to remember when lights are too similar.”'],
+        ['Iteration','Created unique icons and colors for each fountain to enhance visual communication and cognitive ease.']
+      ]
+    },{
+      label:'The Outcome',title:'A positive moment between trains.',
+      notes:[
+        ['Result','Successfully transformed a negative daily touchpoint into a positive, engaging game.'],
+        ['Marketing Relevance','This project showcases my ability in Experiential Marketing, Consumer Research, and Agile Product Development. It demonstrates how a brand can use interactive physical spaces to drive positive sentiment and community engagement.']
+      ]
+    },{
+      label:'Project report',title:'Explore the full project.',
       notes:[['Team','Stanley Liu · Siyi Yu · Unico Yin · Zipei Weng · Zhuangyi Huang']],
       figures:report.pages
     }],
