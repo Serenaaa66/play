@@ -10,7 +10,7 @@ export const sprayProject={
   id:'spray',art:9,demo:false,
   name:'WHYYYYY SPRAY',discTitle:'WHYYYYY SPRAY',discTitleLines:['WHYYYYY','SPRAY'],discSubtitle:'PLAYFUL COMMUTER EXPERIENCES',
   year:'2025',category:'Human-Centred Design Engineering',
-  cover:media+'fountain-cover.png',coverInk:'#eee7d9',
+  cover:media+'fountain-render.png',coverInk:'#eee7d9',
   coverCrop:{fit:'disc',zoom:1.06,background:'#232322'},
   hero:media+'fountain-render.png',heroFit:'contain',
   heroAlt:'WHYYYYY SPRAY rendered fountain with marble-effect surrounds, eight water jets and four central player statues',
