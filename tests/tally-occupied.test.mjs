@@ -41,8 +41,8 @@ test('Tally follows research, co-design, interaction, identity, engineering and 
   assert.match(JSON.stringify(tallyStudy.chapters.at(-1)),/early sticky-note trial/i);
 });
 test('OCCUPIED is a distinct 2025 disc with its own shared-material maps and three concise sections',async()=>{
-  assert.equal(new Set(projects.map(project=>project.id)).size,11);
-  assert.equal(projects.findIndex(project=>project.id==='occupied'),projects.findIndex(project=>project.id==='spray')+1);
+  assert.equal(new Set(projects.map(project=>project.id)).size,7);
+  assert.deepEqual(projects.map(project=>project.id),['in-motion','occupied','spray','ichack','battleship','between-spaces','soft-signals']);
   assert.equal(occupiedProject.year,'2025');
   assert.match(occupiedProject.cover,/blue-door\.png$/);
   const placement=coverImagePlacement(842,666,1024,occupiedProject.coverCrop);
