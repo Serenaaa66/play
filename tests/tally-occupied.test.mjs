@@ -6,6 +6,7 @@ import sharp from 'sharp';
 import {projects} from '../dist/projects.js';
 import {tallyStudy} from '../dist/tally-study.js';
 import {occupiedProject} from '../dist/occupied-study.js';
+import {coverImagePlacement} from '../dist/project-media.js';
 
 const study=new URL('../assets/projects/in-motion/study/',import.meta.url);
 const luminance=hex=>{const rgb=hex.match(/[a-f\d]{2}/gi).map(c=>parseInt(c,16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722;};
@@ -46,6 +47,10 @@ test('OCCUPIED is a distinct 2025 disc with its own shared-material maps and thr
   assert.equal(projects.findIndex(project=>project.id==='occupied'),projects.findIndex(project=>project.id==='spray')+1);
   assert.equal(occupiedProject.year,'2025');
   assert.match(occupiedProject.cover,/blue-door\.png$/);
+  const placement=coverImagePlacement(842,666,1024,occupiedProject.coverCrop);
+  const face={x:placement.x+400/842*placement.width,y:placement.y+155/666*placement.height};
+  assert.ok(face.y>300&&face.y<412,'The face stays below the printed title and above the centre label.');
+  assert.ok(Math.hypot(face.x-512,face.y-512)>110,'The disc centre does not obscure the face.');
   assert.equal(occupiedProject.caseStudy.chapters.length,3);
   const manifest=JSON.parse(await readFile(new URL('../assets/disc-surfaces/occupied/manifest.json',import.meta.url),'utf8'));
   assert.equal(manifest.projectId,'occupied');

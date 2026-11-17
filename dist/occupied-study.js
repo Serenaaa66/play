@@ -5,7 +5,7 @@ export const occupiedProject={
   discSubtitle:'PLAYFUL PHYSICAL INTERACTION',year:'2025',
   category:'Interaction Design / Physical Computing',
   cover:media+'blue-door.png',coverInk:'#eee7d9',
-  coverCrop:{zoom:1,positionX:.5,positionY:.32},
+  coverCrop:{fit:'disc',zoom:1.1,positionX:.5,positionY:.65,background:'#14120e'},
   hero:media+'blue-door.png',heroFit:'contain',
   heroAlt:'A character peeks above the blue door of the OCCUPIED! physical installation',
   overview:'An interactive installation turning an awkward everyday moment into play',
