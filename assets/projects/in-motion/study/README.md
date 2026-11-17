@@ -6,7 +6,20 @@ The case study identifies a four-person college team: Siyi Yu (CIO / Information
 
 The source reports a 75% improvement during an early sticky-note test, without establishing a final-system stall result. Co-design mainly involved one vendor, and a later pressure test of the complete working system remained outstanding. These qualifications are retained in the English case-study copy.
 
-37 original media files are stored locally. WebP files were decoded to confirm their dimensions; the two SVGs are self-contained. The concise case study curates 11 images into five sections, prioritising user needs, CAD, renders and packaging. The bell-hammer sketch is omitted from the page. The three retained interaction sketches already have genuine alpha; the inkDrawing flag removes paper backings and uses theme-aware ink in both the article and full-size viewer. Source pixels, alpha and all original media remain unchanged.
+The v2 case study follows seven sections: research, co-design, interaction design,
+product identity, how it works, renders, and reflection / final film. The original
+bell-hammer sketch remains omitted. Retained interaction sketches use their
+existing alpha and theme-aware ink without changing the source strokes.
+
+The v2 update includes seven additional original files downloaded directly from
+the reference page, plus the supplied transparent exploded assembly and Tally
+mark PNGs. The transaction flow, confidence journey and customer-indecision
+graphics have light/dark SVG variants. Every vector path is retained; only
+text/arrow palettes change. Numbered green/red markers retain dark numerals.
+Original file URLs and checksums are recorded in `docs/tally-v2-media.json`.
+
+The product narrative is adapted for this portfolio, not copied as the reference
+author's first-person claims. Only the final project film remains in the footer.
 
 ## Original asset URLs
 

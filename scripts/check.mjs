@@ -1,5 +1,6 @@
 import {spawnSync} from 'node:child_process';
 const pages=spawnSync(process.execPath,['--test','tests/pages-subpath.test.mjs'],{stdio:'inherit'});if(pages.status!==0)process.exit(pages.status||1);
+const themed=spawnSync(process.execPath,['--test','tests/case-theme-images.test.mjs','tests/tally-occupied.test.mjs','tests/case-study-render.test.mjs'],{stdio:'inherit'});if(themed.status!==0)process.exit(themed.status||1);
 for(const file of ['worker/report-download.js','worker/report-manifest.js','worker/byte-range-response.js','worker/project-video.js','worker/video-manifest.js','scripts/prepare-video-manifest.mjs','dist/report-previews.js','dist/image-viewer.js']){
   const checked=spawnSync(process.execPath,['--check',file],{stdio:'inherit'});if(checked.status!==0)process.exit(checked.status||1);
 }

@@ -27,12 +27,12 @@ test('theme, opening and game sessions cannot overwrite original-site browser ke
   }
 });
 
-async function openViewer(src){
+async function openViewer(src,{theme='light',drawing='artwork'}={}){
   const text=await readFile(new URL('../dist/image-viewer.js',import.meta.url),'utf8');
   const code=rewriteForPages(text,options,'image-viewer.js').replace(/^import .*;\r?\n/,'').replace('import.meta.url',JSON.stringify('https://siyiyu66.github.io/portfolio-v2/image-viewer.js'));
   const elements=new Map();
   const document={documentElement:{dataset:{},style:{setProperty(){}}},querySelector(){return {content:''};},getElementById(id){if(!elements.has(id))elements.set(id,{hidden:true,addEventListener(){}});return elements.get(id);}};
-  vm.runInNewContext(code,{URL,URLSearchParams,location:{search:'?'+new URLSearchParams({src,drawing:'artwork',inkWidth:'32'})},localStorage:{getItem(){return 'light';}},document,loadTypography(){}});
+  vm.runInNewContext(code,{URL,URLSearchParams,location:{search:'?'+new URLSearchParams({src,drawing,inkWidth:'32'})},localStorage:{getItem(){return theme;}},document,loadTypography(){}});
   return elements;
 }
 test('the figure viewer accepts study pages and transparent artwork under its own base path',async()=>{
@@ -49,4 +49,14 @@ test('the viewer rejects media from the original site and arbitrary external pat
     assert.equal(elements.get('image')?.src,undefined);
     assert.equal(elements.get('error')?.hidden,false);
   }
+});
+test('full-size Tally diagrams follow the saved theme after opening an older image link',async()=>{
+  for(const theme of ['light','dark']){
+    const src='/portfolio-v2/assets/projects/in-motion/study/confidence-journey-'+(theme==='light'?'dark':'light')+'.svg';
+    const elements=await openViewer(src,{theme,drawing:'theme'});
+    assert.equal(elements.get('image')?.src,'/portfolio-v2/assets/projects/in-motion/study/confidence-journey-'+theme+'.svg');
+    assert.equal(elements.get('image')?.hidden,false);
+  }
+  const invalid=await openViewer('/portfolio-v2/assets/projects/in-motion/study/arbitrary-dark.svg',{drawing:'theme'});
+  assert.equal(invalid.get('error')?.hidden,false);
 });

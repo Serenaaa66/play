@@ -8,6 +8,7 @@ import {tallyHero, tallyMetadata, tallyStudy} from './tally-study.js';
 import {ichackHero, ichackMetadata, ichackStudy} from './ichack-study.js';
 import {segwayProject} from './segway-study.js';
 import {sprayProject} from './spray-study.js';
+import {occupiedProject} from './occupied-study.js';
 
 export const projects = [
   {
@@ -77,6 +78,7 @@ export const projects = [
     caseStudy: tallyStudy
   },
   sprayProject,
+  occupiedProject,
   {id:'soft-signals',art:4,demo:false,...sustainableProject},
   {id:'common-ground',art:5,demo:false,...feaProject},
   {

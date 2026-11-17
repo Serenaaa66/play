@@ -232,6 +232,39 @@
       "pixelsIdentical": true
     },
     {
+      "source": "assets/disc-surfaces/occupied/normal.png",
+      "output": "assets/disc-surfaces/occupied/normal.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytesBefore": 744473,
+      "bytesAfter": 522302,
+      "pixelSha256": "e2acf50c8bd9703b6606755bc2045d9b705c24bb709f6fc66f37a45376516259",
+      "encodedSha256": "4cf3596cf1d8dabd7dfe67bff66940cfb4fbfac037c342bbb848843b5b6229a4",
+      "pixelsIdentical": true
+    },
+    {
+      "source": "assets/disc-surfaces/occupied/roughness.png",
+      "output": "assets/disc-surfaces/occupied/roughness.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytesBefore": 406743,
+      "bytesAfter": 344702,
+      "pixelSha256": "0ebc257dd264501468f9ece55f34890446208b2f1cfd9bcf85866a788d52ecb7",
+      "encodedSha256": "95ccffc43d4fbe836f3a6e447416067a80745bfa44fb77c6b0de5b1b663284b8",
+      "pixelsIdentical": true
+    },
+    {
+      "source": "assets/disc-surfaces/occupied/coat-roughness.png",
+      "output": "assets/disc-surfaces/occupied/coat-roughness.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytesBefore": 434541,
+      "bytesAfter": 371292,
+      "pixelSha256": "eb9e292bc4320dc95d280a0974f50c0fae7afd87be8e83a5a24a07805513befd",
+      "encodedSha256": "fbe43bb71523e1ac32a9da8df87edf54d5dbbf1f30a128cf955b965ee315d3a4",
+      "pixelsIdentical": true
+    },
+    {
       "source": "assets/disc-surfaces/slow-forms/normal.png",
       "output": "assets/disc-surfaces/slow-forms/normal.webp",
       "width": 1024,

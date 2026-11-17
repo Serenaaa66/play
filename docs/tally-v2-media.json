@@ -1,0 +1,149 @@
+{
+  "reference": "https://suryansha.com/projects/tally",
+  "assets": [
+    {
+      "name": "confidence-journey-dark.svg",
+      "source": "confidence-journey.svg",
+      "treatment": "Original vector paths; text/arrow palette only",
+      "palette": {
+        "#8A8175": "#DCD5CA",
+        "#1F1B16": "#EEE6D9",
+        "#EF5E41": "#B83E28"
+      },
+      "accentStrokeAndText": "#F58B6E"
+    },
+    {
+      "name": "confidence-journey-light.svg",
+      "source": "confidence-journey.svg",
+      "treatment": "Original vector paths; text/arrow palette only",
+      "palette": {
+        "#8A8175": "#49443D",
+        "#1F1B16": "#24201A",
+        "#EF5E41": "#B83E28"
+      }
+    },
+    {
+      "name": "customer-indecision-dark.svg",
+      "source": "customer-indecision.svg",
+      "treatment": "Original vector paths; text/arrow palette only",
+      "palette": {
+        "#8A8175": "#DCD5CA",
+        "#1F1B16": "#EEE6D9",
+        "#EF5E41": "#B83E28"
+      },
+      "accentStrokeAndText": "#F58B6E"
+    },
+    {
+      "name": "customer-indecision-light.svg",
+      "source": "customer-indecision.svg",
+      "treatment": "Original vector paths; text/arrow palette only",
+      "palette": {
+        "#8A8175": "#49443D",
+        "#1F1B16": "#24201A",
+        "#EF5E41": "#B83E28"
+      }
+    },
+    {
+      "name": "customer-indecision.svg",
+      "source": "https://suryansha.com/assets/customer-indecision-flow-BrIzZAGH.svg",
+      "sha256": "292c8d06899373a76a88cf26695ee1fed232a45deb7e6ddfd0d03dfa1899e271",
+      "width": 221,
+      "height": 66,
+      "bytes": 28359,
+      "original": true
+    },
+    {
+      "name": "exploded-transparent.png",
+      "source": "User-supplied original PNG",
+      "sha256": "df7dc2a5f113eaa3a6d091633b6059298c8cde678f99dd406658ebad703062a2",
+      "width": 2384,
+      "height": 1376,
+      "bytes": 1250141,
+      "original": true
+    },
+    {
+      "name": "hand-bag.svg",
+      "source": "https://suryansha.com/assets/hand-2-bottleneck-Dsm5y52D.svg",
+      "sha256": "aba334e5d5edb3a1ce6ecc5945d1f0f122fc6dcc30f9ec06504731529e769ce7",
+      "width": 64,
+      "height": 82,
+      "bytes": 4849,
+      "original": true
+    },
+    {
+      "name": "hand-payment.svg",
+      "source": "https://suryansha.com/assets/hand-3-bottleneck-Bp-Q1FcI.svg",
+      "sha256": "f15bb31c0c0200ffc14f2bb8d4f26a0c2d936a3ab96b95d3b50bb824c59ba2bb",
+      "width": 65,
+      "height": 82,
+      "bytes": 8253,
+      "original": true
+    },
+    {
+      "name": "hand-tongs.svg",
+      "source": "https://suryansha.com/assets/hand-1-bottleneck-D0msvr8k.svg",
+      "sha256": "1cc52db4e399f1f3b166b690c0a6bc3022552a3a9ce74ed47f70ca9ddf26fc67",
+      "width": 66,
+      "height": 82,
+      "bytes": 4140,
+      "original": true
+    },
+    {
+      "name": "pos-friction.webp",
+      "source": "https://suryansha.com/assets/pos-tech-friction-COSFfc7l.webp",
+      "sha256": "5eaa2b131d2cd76f75df998759f3aa9d6bbba75554d9e8616326e067ef462f3b",
+      "width": 306,
+      "height": 366,
+      "bytes": 18302,
+      "original": true
+    },
+    {
+      "name": "tally-mark.png",
+      "source": "User-supplied original PNG",
+      "sha256": "24460a1c88e5daf7c7c392af9a324a2fe775a033b5c8b1f023becd9d90d1ee19",
+      "width": 1120,
+      "height": 500,
+      "bytes": 206803,
+      "original": true
+    },
+    {
+      "name": "toilet-flush.webp",
+      "source": "https://suryansha.com/assets/toilet-flush-DU56RmH3.webp",
+      "sha256": "3c16065b22f2663d7687e82359cebfeea4848290649b3e4880c86cf392e5a579",
+      "width": 336,
+      "height": 185,
+      "bytes": 10216,
+      "original": true
+    },
+    {
+      "name": "transaction-flow-dark.svg",
+      "source": "transaction-flow.svg",
+      "treatment": "Original vector paths; text/arrow palette only",
+      "palette": {
+        "#8A8175": "#DCD5CA",
+        "#1F1B16": "#EEE6D9",
+        "#EF5E41": "#B83E28"
+      },
+      "accentStrokeAndText": "#F58B6E"
+    },
+    {
+      "name": "transaction-flow-light.svg",
+      "source": "transaction-flow.svg",
+      "treatment": "Original vector paths; text/arrow palette only",
+      "palette": {
+        "#8A8175": "#49443D",
+        "#1F1B16": "#24201A",
+        "#EF5E41": "#B83E28"
+      }
+    },
+    {
+      "name": "transaction-quote.svg",
+      "source": "https://suryansha.com/assets/end-of-transaction-quote-bubble-CFy14PzD.svg",
+      "sha256": "e8e13347e9792563bde9c3bf93785990828e9e0b7e4869769082e527d5a72bb8",
+      "width": 393,
+      "height": 98,
+      "bytes": 95703,
+      "original": true
+    }
+  ]
+}
