@@ -21,7 +21,7 @@ export const tallyMetadata={
   headline:'Confidence in every transaction.',
   lede:'A modular point-of-sale system for outdoor food markets. Eleven interviews across three markets and co-design with bakery trader Laurence shaped physical keys, a flexible layout and unmistakable payment feedback.',
   collection:'Industrial Design',
-  credits:[['CIO','Siyi Yu'],['CCO','Suryansha Sheth'],['CTO','Hamish McNeill'],['COO','Kaiyu Gaunt']]
+  credits:[['SKILLS','UX Research · Interaction Design · Storytelling']]
 };
 
 export const tallyStudy={
