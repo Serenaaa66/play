@@ -32,7 +32,7 @@ test('the Tally story renders all seven chapters and ordered image groups in bot
   for(const theme of ['light','dark']){
     const h=await render(tallyStudy,theme);
     assert.equal(h.nodes.filter(node=>hasClass(node,'case-chapter')).length,7);
-    assert.equal(h.nodes.filter(node=>hasClass(node,'case-figure')).length,23);
+    assert.equal(h.nodes.filter(node=>hasClass(node,'case-figure')).length,24);
     assert.equal(h.nodes.filter(node=>hasClass(node,'case-note-icon')).length,3);
     assert.equal(h.strips.length,4);
     const first=h.nodes.find(node=>hasClass(node,'case-chapter'));
@@ -48,7 +48,7 @@ test('the Tally story renders all seven chapters and ordered image groups in bot
       assert.ok(url.searchParams.get('src').endsWith('-'+theme+'.svg'));
     }
     const film=h.nodes.filter(node=>node.href==='https://www.youtube.com/watch?v=ZbQ81tp5KtI');
-    assert.equal(film.length,1);assert.ok(!film[0].textContent.includes('Suryansha'));
+    assert.equal(film.length,0);assert.equal(h.nodes.filter(node=>node.tagName==='VIDEO').length,1);
     h.dispose();
   }
 });

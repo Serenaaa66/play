@@ -122,6 +122,7 @@ export const tallyStudy={
     },
     {
       label:'Final film & reflection',title:'Keep testing the complete experience.',
+      figures:[{type:'video',src:media+'tally-film.mp4',poster:media+'tally-film-poster.jpg',width:1280,height:720,autoplayOnView:true,caption:'Tally · Plays muted; turn on sound to hear the film.'}],
       intro:'An early sticky-note trial reported a 75% improvement with physical targets. It was an encouraging direction, rather than a final-system result. The next step is a broader trial of the complete working system during busy service.',
       notes:[
         ['Team','Siyi Yu · Suryansha Sheth · Hamish McNeill · Kaiyu Gaunt'],
@@ -130,5 +131,5 @@ export const tallyStudy={
     }
   ],
   resourcesLabel:'Project film',
-  links:[{label:'Watch the final film',href:'https://www.youtube.com/watch?v=ZbQ81tp5KtI'}]
+  links:[]
 };

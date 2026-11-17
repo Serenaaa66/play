@@ -36,9 +36,7 @@ test('supplied transparent originals retain their bytes and alpha',async()=>{
 });
 test('Tally follows research, co-design, interaction, identity, engineering and outcome in order',()=>{
   assert.deepEqual(tallyStudy.chapters.map(chapter=>chapter.label),['UX research','Co-design','Interaction design','Product identity','How it works','Renders','Final film & reflection']);
-  assert.equal(tallyStudy.links.length,1);
-  assert.equal(tallyStudy.links[0].href,'https://www.youtube.com/watch?v=ZbQ81tp5KtI');
-  assert.equal(tallyStudy.links[0].label,'Watch the final film');
+  assert.equal(tallyStudy.links.length,0);
   assert.ok(!JSON.stringify(tallyStudy).includes('bell-sketch.webp'));
   assert.match(JSON.stringify(tallyStudy.chapters.at(-1)),/early sticky-note trial/i);
 });
