@@ -11,3 +11,11 @@ reality. The brief is used as content guidance, not inserted as a screenshot.
 Technical details are taken from the supplied diagrams: Bela and C++ control,
 five servo motors, a piezo knock sensor, paper microswitch, magnetic reed switch,
 push button, COB LED, and speaker. No external client or brand is asserted.
+
+The closing film is a complete 57.52-second web rendition of the supplied
+`GMMB5145.MP4`: 1920×1080 H.264 / AAC with its original audio, and MP4 metadata
+at the front for streaming. It is an inline native player, muted initially.
+Only this film opts into scroll playback; leaving view or hiding the page
+pauses it. An intentional pause is respected while it remains in view.
+The full source file remains outside the repository; encoding details and the
+web-file checksum are recorded in `docs/occupied-video.json`.

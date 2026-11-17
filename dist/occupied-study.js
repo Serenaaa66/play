@@ -47,7 +47,12 @@ export const occupiedProject={
         ],
         figureGroups:[
           {label:'Electronics & control',figures:[{src:media+'electronics.png',width:1158,height:813,wide:true,maxWidth:1120,diagram:true,caption:'Electronics · Sensors, five servo motors, COB LED and audio connected to Bela'}]},
-          {label:'Build & test',figures:[{src:media+'prototype-testing.png',width:1795,height:1010,wide:true,maxWidth:1120,caption:'Prototype development · Wiring, mechanisms, sensor checks and hands-on testing'}]}
+          {label:'Build & test',figures:[{src:media+'prototype-testing.png',width:1795,height:1010,wide:true,maxWidth:1120,caption:'Prototype development · Wiring, mechanisms, sensor checks and hands-on testing'}]},
+          {label:'See it in action',figures:[{
+            type:'video',src:media+'occupied-demo.mp4',poster:media+'occupied-poster.jpg',
+            width:1920,height:1080,autoplayOnView:true,
+            caption:'OCCUPIED! in action · Plays muted; turn on sound to hear the character.'
+          }]}
         ]
       }
     ]

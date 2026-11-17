@@ -37,13 +37,17 @@ function resultsTable({caption, columns, rows}) {
   return table;
 }
 
-function videoFigure({src,poster,width,height,caption},index){
+function videoFigure({src,poster,width,height,caption,autoplayOnView=false},index){
   const figure=make('figure','case-figure case-figure--wide case-video-figure');
   if(width>height)figure.classList.add('case-video-figure--landscape');
   figure.style.setProperty('--figure-ratio',width/height);
   const frame=make('div','case-figure-link case-video-frame');
   const video=make('video','case-video');
   video.controls=true;video.playsInline=true;video.preload='none';
+  if(autoplayOnView){
+    video.dataset.autoplayOnView='true';video.muted=true;video.defaultMuted=true;
+    video.setAttribute('muted','');video.setAttribute('playsinline','');
+  }
   video.width=width;video.height=height;video.poster=poster;video.src=src;
   video.setAttribute('aria-label',caption);
   video.append(document.createTextNode('Your browser does not support inline video.'));
@@ -53,8 +57,8 @@ function videoFigure({src,poster,width,height,caption},index){
   figure.append(frame,legend);return figure;
 }
 
-function galleryFigure({type, poster, src, darkSrc, smallSrc, width, height, caption, wide, maxWidth, background, borderless, inkDrawing, transparentArt, themeInkWidth, darkSurface, viewerSurface, page, diagram, brandMark}, index) {
-  if(type==='video')return videoFigure({src,poster,width,height,caption},index);
+function galleryFigure({type, poster, src, darkSrc, smallSrc, width, height, caption, wide, maxWidth, background, borderless, inkDrawing, transparentArt, themeInkWidth, darkSurface, viewerSurface, page, diagram, brandMark, autoplayOnView}, index) {
+  if(type==='video')return videoFigure({src,poster,width,height,caption,autoplayOnView},index);
   const figure = make('figure', wide ? 'case-figure case-figure--wide' : 'case-figure');
   if(borderless)figure.classList.add('case-figure--floating');
   if(inkDrawing)figure.classList.add('case-figure--ink');

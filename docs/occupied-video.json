@@ -1,0 +1,18 @@
+{
+  "sourceFilename": "GMMB5145.MP4",
+  "sourceBytes": 164084757,
+  "webBytes": 26868883,
+  "durationSeconds": 57.52,
+  "width": 1920,
+  "height": 1080,
+  "videoCodec": "H.264 High, yuv420p, 30 fps",
+  "audioCodec": "AAC-LC stereo, 160 kb/s",
+  "fastStart": true,
+  "sha256": "9d47240588c0d5fce0dd5bbfd3cf10380e00ef09c0a08a9673072ffa4d3daa90",
+  "boxes": [
+    "ftyp",
+    "moov",
+    "free",
+    "mdat"
+  ]
+}

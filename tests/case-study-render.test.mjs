@@ -52,12 +52,20 @@ test('the Tally story renders all seven chapters and ordered image groups in bot
     h.dispose();
   }
 });
-test('OCCUPIED renders an image-led opening, three sections and only the four supplied project images',async()=>{
+test('OCCUPIED ends with one inline scroll-play film after its four project images',async()=>{
   const h=await render(occupiedProject.caseStudy,'dark');
   const chapters=h.nodes.filter(node=>hasClass(node,'case-chapter'));
   assert.equal(chapters.length,3);assert.ok(hasClass(chapters[0],'case-chapter--image-led'));
-  assert.equal(h.nodes.filter(node=>hasClass(node,'case-figure')).length,4);
+  assert.equal(h.nodes.filter(node=>hasClass(node,'case-figure')).length,5);
   assert.ok(h.nodes.filter(node=>node.tagName==='IMG').every(image=>image.src.includes('/occupied/study/')));
   assert.equal(h.strips.length,0);
+  const videos=h.nodes.filter(node=>node.tagName==='VIDEO');
+  assert.equal(videos.length,1);
+  assert.equal(videos[0].dataset.autoplayOnView,'true');
+  assert.equal(videos[0].muted,true);assert.equal(videos[0].defaultMuted,true);
+  assert.equal(videos[0].playsInline,true);assert.equal(videos[0].controls,true);
+  assert.equal(videos[0].preload,'none');assert.equal(videos[0].autoplay,undefined);
+  assert.match(videos[0].src,/\/occupied-demo\.mp4$/);
+  assert.equal(h.nodes.filter(node=>node.tagName==='IFRAME').length,0);
   h.dispose();
 });
