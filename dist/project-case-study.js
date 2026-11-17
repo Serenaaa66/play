@@ -145,6 +145,7 @@ export function renderProjectCaseStudy(host, {chapters, links, resourcesLabel = 
   chapters.forEach(({label, title, intro, notes, acknowledgements, results, figures, figureGroups, pid, layout}, index) => {
     const section = make('section', 'case-chapter');
     if(layout==='image-led')section.classList.add('case-chapter--image-led');
+    if(layout==='storyboard')section.classList.add('case-chapter--storyboard');
     const heading = make('header', 'case-chapter-heading');
     heading.append(make('span', 'case-label', `${String(index + 1).padStart(2, '0')} / ${label}`), make('h3', '', title));
     const copy = make('div', 'case-chapter-copy');

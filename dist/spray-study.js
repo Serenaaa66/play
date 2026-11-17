@@ -26,6 +26,7 @@ export const sprayProject={
   caseStudy:{
     chapters:[{
   "label": "Storyboard",
+  "layout": "storyboard",
   "title": "From a passing glance to a shared win.",
   "intro": "Follow the ten-step journey: notice the fountain, discover the interaction, invite friends and remember the sequence together.",
   "figures": [
