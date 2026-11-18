@@ -142,10 +142,11 @@ export function renderProjectCaseStudy(host, {chapters, links, resourcesLabel = 
   const content = document.createDocumentFragment();
   const strips = [];
   let figureIndex = 0;
-  chapters.forEach(({label, title, intro, notes, acknowledgements, results, figures, figureGroups, pid, layout}, index) => {
+  chapters.forEach(({label, title, intro, notes, acknowledgements, results, figures, figureGroups, pid, layout, transitionQuote, testimony}, index) => {
     const section = make('section', 'case-chapter');
     if(layout==='image-led')section.classList.add('case-chapter--image-led');
     if(layout==='storyboard')section.classList.add('case-chapter--storyboard');
+    if(transitionQuote)section.append(make('blockquote','case-transition-quote',transitionQuote));
     const heading = make('header', 'case-chapter-heading');
     heading.append(make('span', 'case-label', `${String(index + 1).padStart(2, '0')} / ${label}`), make('h3', '', title));
     const copy = make('div', 'case-chapter-copy');
@@ -173,6 +174,19 @@ export function renderProjectCaseStudy(host, {chapters, links, resourcesLabel = 
     }
     if (results) copy.append(resultsTable(results));
     section.append(heading, copy);
+    if(testimony){
+      const panel=make('section','case-testimony');
+      panel.append(make('h4','',testimony.title));
+      for(const item of testimony.items){
+        const entry=make('div','case-testimony-entry');
+        const quote=make('blockquote');
+        const paragraph=make('p','',item.quote+' ');
+        paragraph.append(make('strong','',item.emphasis),document.createTextNode((item.ending?' '+item.ending:'')+'”'));
+        quote.append(paragraph,make('cite','',`– ${item.author}`));
+        entry.append(make('h5','',item.label),quote);panel.append(entry);
+      }
+      section.append(panel);
+    }
     if(pid)section.append(renderPIDControl(pid,entry=>galleryFigure(entry,++figureIndex)));
     for(const group of figureGroups||[{figures}]){
     const groupFigures=group.figures;

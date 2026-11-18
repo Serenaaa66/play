@@ -50,6 +50,11 @@ export const tallyStudy={
     },
     {
       label:'Co-design',title:'From faster taps to greater confidence.',
+      transitionQuote:'We stopped designing for speed and started designing for confidence.',
+      testimony:{title:'The failure shows up at 2 ends',items:[
+        {label:'Input – what the vendor does to enter a sale.',quote:'“It (traditional cash register) makes a single noise every time you press a button. If I’ve slightly pressed between the two, I’ll never be able to tell. The only way I can check is physically; I have to be paying attention to it.',emphasis:'Nothing’s telling me what’s happening.',author:'Laurence'},
+        {label:'Output – Knowing the transaction completed.',quote:'“When the payment goes through, it makes no noise. I don’t know it’s done. The customer doesn’t know it’s done.',emphasis:'There’s a hesitation at the end.',ending:'I lose transactions sometimes.',author:'Laurence'}
+      ]},
       intro:[
         'Co-design with Laurence at the Southbank Centre food market brought the brief into focus. A quick interaction is not enough if the trader still has to stop and check what happened.',
         'The journey map highlights two moments of doubt: entering the order and waiting for payment. Clear feedback at both ends became the design priority.'
