@@ -34,7 +34,7 @@ export const occupiedProject={
           ['User Journey','Designed a Finite State Machine (Normal, Angry, Screaming, Win) to map out the user’s interactive journey.'],
           ['Storytelling','Created an engaging narrative where every physical action leads to an immediate, multi-sensory (sound + visual) response, keeping the user hooked.']
         ],
-        figures:[{src:media+'interaction-frame-4.png',width:842,height:595,wide:true,maxWidth:842,diagram:true,caption:'User journey · Physical actions, character reactions and timed states'}]
+        figures:[{src:media+'interaction-frame-4-hd.png',width:842,height:595,wide:true,maxWidth:842,diagram:true,caption:'User journey · Physical actions, character reactions and timed states'}]
       },
       {
         label:'The Execution & Marketing Value',title:'From concept to reality',
@@ -44,7 +44,7 @@ export const occupiedProject={
           ['Keywords','Experiential Marketing | Gamification | User Journey Mapping | Prototyping | Storytelling']
         ],
         figureGroups:[
-          {label:'Electronics & control',figures:[{src:media+'electronics-frame-5.png',width:842,height:595,wide:true,maxWidth:842,diagram:true,caption:'Electronics · Sensors, five servo motors, COB LED and audio connected to Bela'}]},
+          {label:'Electronics & control',figures:[{src:media+'electronics-frame-5-hd.png',width:842,height:595,wide:true,maxWidth:842,diagram:true,caption:'Electronics · Sensors, five servo motors, COB LED and audio connected to Bela'}]},
           {label:'Build & test',figures:[{src:media+'prototype-testing.png',width:1795,height:1010,wide:true,maxWidth:1120,caption:'Prototype development · Wiring, mechanisms, sensor checks and hands-on testing'}]},
           {label:'See it in action',figures:[{
             type:'video',src:media+'occupied-demo.mp4',poster:media+'occupied-poster.jpg',
