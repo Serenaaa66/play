@@ -1,11 +1,9 @@
-# Listening Room — Siyi Yu
+# Listening Room
 
 Independent design engineering portfolio copy. Intended address after publication:
 **https://serenaaa66.github.io/play/**
 
-Copied from `SiyiYU66/SiyiYU66.github.io` at
-`2f4db07ed37c91de25be176afcfa9307cd4be5f0`. Deployment routing and browser-storage
-names are isolated; the project content and visual experience are preserved.
+Deployment routing and browser-storage names are isolated; the project content and visual experience are preserved.
 
 ## Editing
 
